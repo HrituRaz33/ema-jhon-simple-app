@@ -11,7 +11,7 @@ const Shop = () => {
     const [products, setProducts] = useProducts();
     const [cart, setCart] = useState([]);
 
-    console.log(products);
+    // console.log(products);
 
 
 
