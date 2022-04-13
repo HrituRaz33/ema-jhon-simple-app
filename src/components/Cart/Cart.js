@@ -2,12 +2,12 @@ import React from 'react';
 
 const Card = (props) => {
 
-    const {cart} = props;
-    
+    const { cart } = props;
+
     let total = 0;
     let shipping = 0;
 
-    for(const product of cart){
+    for (const product of cart) {
         total = total + product.price;
         shipping = shipping + product.shipping;
     }
@@ -24,6 +24,7 @@ const Card = (props) => {
             <p>Total Shipping: ${shipping}</p>
             <p>Tex: ${tax}</p>
             <h5>Grand Total: ${grandTotal}</h5>
+            {props.children}
         </div>
     );
 };
