@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import useProducts from '../../hooks/useProducts';
 import { addToDb } from '../../utilities/fakedb';
 import Cart from '../Cart/Cart';
@@ -7,7 +7,7 @@ import './Shop.css'
 
 const Shop = () => {
 
-    const [products, setProducts] = useProducts;
+    const [products, setProducts] = useProducts();
     const [cart, setCart] = useState([]);
 
     console.log(products);
